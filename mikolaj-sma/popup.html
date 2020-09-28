@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+  <body>
+	<div style="padding: 10px; min-width: 250px;">
+		  <div class="form-group">
+			<label for="amount">kwota do rozbicia</label>
+			<input type="number" class="form-control" id="amount" placeholder="100">
+		  </div>		  
+		  <div class="form-group">
+			<label for="name">imię</label>
+			<input type="text" class="form-control" id="name" placeholder="Mikołaj">
+		  </div>
+		  <div class="form-group">
+			<label for="description">opis</label>
+			<input type="text" class="form-control" id="description" placeholder="Pokonuję SMokA!!!">
+		  </div>
+		  <div class="form-group">
+			<label for="sex">płeć</label>
+			<select id="sex" class="form-control">
+				<option value="female">kobieta</option>
+				<option value="male">mężczyzna</option>
+			<select>			
+		  </div>		  
+		  <button id="killTheDragon" type="submit" class="btn btn-primary btn-block">Pokonuj SMokA ⚔🐉</button>
+		  <small class="form-text text-muted">Pozostaw zakładkę aktywną dopóki walka ze smokiem się nie zakończy.</small>		  
+	</div>
+	<div id="linksDownloader" style="padding: 10px; min-width: 250px; display: none">
+		  <hr>
+		  <button id="getAllLinks" type="submit" class="btn btn-secondary btn-block">Pobierz wszystkie 🔗 linki</button>
+		  <small class="form-text text-muted">Zbiera wszsytkie linki ze <a href="https://www.siepomaga.pl/platnosc/success?confirmed=true" target="_blank">strony podsumowania</a> (dostępna po opłaceniu koszyka darowizn).</small>
+	</div>	
+    <script src="popup.js"></script>
+  </body>
+</html>

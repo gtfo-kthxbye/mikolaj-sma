@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+  <body>
+	<div style="padding: 10px; min-width: 250px;">
+		<div class="form-group">
+			<label for="singleAmount">pojedyńcza kwota, Twoja całkowita wpłata będzie rozbita na N wpłat o tej kwocie, kwota nie może być mniejsza niż 1 złoty.</label>
+			<input type="number" min="1" step="1" value="2" class="form-control" id="singleAmount" placeholder="2">
+		</div>		  	  
+		<button id="save" type="submit" class="btn btn-primary btn-block">💾 Zapisz</button>
+		<small>⚠ Uwaga: Wpłaty na niektóre skarbonki mogą kończyć się błędem (np. pełne, nieaktywne). Jeśli były błędy brakująca pojedyńcze wpłaty możesz dodać póżniej do koszyka ręcznie.</small>
+		
+		<p class="font-weight-bold mt-5">Lista skarbonek:</p>
+		<ul id="piggyList" class="list-group"></ul>		  
+	</div>
+    <script src="options.js"></script>
+  </body>
+</html>
